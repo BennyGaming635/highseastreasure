@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Map Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0GfYtJ3JtfXk+fY6xJ60bqDT8lQxD4pZtRekfzZ2p6J7q2xT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header class="my-4 text-center">
+            <h1 class="display-4">Treasure Map Generator</h1>
+            <p class="lead">Generate absurd, nonsensical quests for your next adventure!</p>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- User Input for API Key -->
+                <div class="form-group">
+                    <label for="api-key">Enter your Pixabay API Key:</label>
+                    <input type="text" class="form-control" id="api-key" placeholder="Your API Key" />
+                </div>
+
+                <!-- Generate Button -->
+                <button class="btn btn-primary btn-block" onclick="generateMap()">Generate Map</button>
+            </div>
+        </div>
+
+        <div id="quests" class="mt-5">
+            <!-- Quest content will go here -->
+        </div>
+
+        <div id="map" style="height: 500px; width: 100%;" class="mt-5"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyA2QbZzU5sNfEXkD5fZtZGh/ftbm3jOg3Eqy0Jp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0GfYtJ3JtfXk+fY6xJ60bqDT8lQxD4pZtRekfzZ2p6J7q2xT" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0GfYtJ3JtfXk+fY6xJ60bqDT8lQxD4pZtRekfzZ2p6J7q2xT" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
